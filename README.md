@@ -1,107 +1,120 @@
-# Bimagic - Summon the Git Wizard! 🪄✨
+# Bimagic Documentation 🔮✨
 
-Welcome to the official documentation repository for **Bimagic**, the ultimate Git companion. This website provides comprehensive guides, tutorials, and reference material to help you master Git with ease.
+Welcome to the official documentation repository for **Bimagic**, the interactive Git companion. This website provides comprehensive guides, installation tutorials, and spell references for both **Bimagic Go Edition (`bimagic-go` v2.0.0)** (Recommended) and the classic **Bimagic Shell Edition**.
 
-Built with [Docusaurus 3](https://docusaurus.io/), this site is designed for performance, accessibility, and a great developer experience.
+Built with [Docusaurus 3](https://docusaurus.io/), this site is optimized for ultra-fast performance, accessibility, and an intuitive developer experience.
 
 ## 🌐 Live Site
+
 Check out the live documentation at: **[https://bimagic.vercel.app](https://bimagic.vercel.app)**
 
 ---
 
-## 🚀 Getting Started
+## 🔮 What's Documented
+
+This site covers full documentation for Bimagic v2.0.0:
+
+- **🚀 Installation Guides**: Automated one-liner (`curl`), Go `go install`, native **Windows Installation (`bimagic.exe`)**, npm, and manual build workflows.
+- **🎹 Shell & Editor Integrations**: Zsh, Bash, and Fish keybindings (**Ctrl + B**), Neovim `toggleterm` floating popups, and the `wz` shortcut symlink.
+- **🎨 Theme Customization**: Custom color palettes via `~/.config/bimagic/theme.wz` and automatic wallpaper color syncing via **Matugen**.
+- **📜 Complete Spellbook (24 Interactive Operations)**:
+  - `clone` - Standard & Interactive Sparse Checkouts
+  - `init` - Rapid setup with guaranteed `main` default
+  - `unstage` - Interactive file unstaging (`git restore --staged`) *(Go Edition)*
+  - `discard` - Safe local modification discarding (`git checkout --`) *(Go Edition)*
+  - `commit` - Magic Commit Builder (Conventional) & Quick Commit
+  - `push` & `pull` - Remote synchronization & upstream auto-tracking
+  - `branch` - Switch, create, rename (`-m`), and delete (`-d`/`-D`) branches
+  - `tag` - Complete tag lifecycle (create, list, push, delete local & remote tags) *(Go Edition)*
+  - `diff` - Unstaged, staged, file, and branch comparison diffs *(Go Edition)*
+  - `cherry` - Search and pluck specific commits onto current branch *(Go Edition)*
+  - `remote` - Set HTTPS token or SSH remotes
+  - `status` - Single-pass porcelain v2 status dashboard (<5ms latency)
+  - `contributor-stats` - Per-author contribution activity (lines, commits, highlights)
+  - `git-graph` - Pretty git log tree visualization
+  - `architect` - Interactive `.gitignore` generator with 70+ blueprints
+  - `file-removal` - Safe `git rm` file/folder deletion
+  - `merge` & `uninitialize` - Branch merging & Git untracking
+  - `resurrection` - Reflog recovery for lost commits/branches
+  - `revert` & `undo` - Multi-select commit revert & Time Turner undo
+  - `stash` - Stash push, pop, list, apply, drop, clear
+  - `scrying` - Quick file browser with `fzf` side-by-side preview & `bat` syntax highlighting
+
+---
+
+## 🚀 Local Development
 
 ### Prerequisites
-- [Node.js](https://nodejs.org/) (version 20 or higher)
+- [Node.js](https://nodejs.org/) (version 18 or higher)
 - [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
 ### Installation
-Clone the repository and install the dependencies:
+Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/orion-kernel/bimagic-docs.git
+git clone https://github.com/bimagic/bimagic-docs.git
 cd bimagic-docs
 npm install
 ```
 
-### Local Development
-Start the development server:
+### Start Development Server
 
 ```bash
 npm run start
 ```
-This command starts a local development server and opens up a browser window at `http://localhost:3000`. Most changes are reflected live without having to restart the server.
+This starts a local development server at `http://localhost:3000` with live hot-reloading.
 
 ---
 
 ## 🛠️ Build & Deployment
 
 ### Production Build
-To generate a static production build:
+Generate a static production build:
 
 ```bash
 npm run build
 ```
-The static files will be generated in the `build` directory.
+The static HTML/CSS/JS assets will be generated in the `build/` directory.
 
-### Testing the Build
-Preview your production build locally:
-
+### Preview Build Locally
 ```bash
 npm run serve
 ```
 
-### Deployment
-This site is configured for deployment via GitHub Pages or Vercel.
-
-**For GitHub Pages:**
-```bash
-# Using SSH
-USE_SSH=true npm run deploy
-
-# Not using SSH
-GIT_USER=<Your GitHub username> npm run deploy
-```
-
 ---
 
-## 📂 Project Structure
+## 📂 Repository Structure
 
 ```text
 .
-├── blog/             # Blog posts and announcements
-├── docs/             # Documentation MDX files
-│   ├── menu-options/ # Detailed guides for specific features
-│   └── ...           # Installation, Usage, Configuration, etc.
-├── src/
-│   ├── components/   # Custom React components
-│   ├── css/          # Global CSS and styling
-│   └── pages/        # Custom standalone pages (e.g., Homepage)
-├── static/           # Static assets (images, logos, favicons)
-├── docusaurus.config.js # Main site configuration
-└── sidebars.js       # Documentation sidebar layout
+├── blog/                 # Announcements & release notes
+├── docs/                 # Documentation MDX source files
+│   ├── menu-options/     # Detailed guides for all 24 spell operations
+│   ├── configuration.md  # PAT, Theme, & Matugen configuration
+│   ├── installation.md   # Linux, macOS, Windows & Go setup
+│   ├── intro.md          # Overview & feature matrix
+│   ├── usage.md          # CLI flags & status dashboard
+│   ├── troubleshooting.md
+│   └── uninstallation.md
+├── src/                  # Custom React components & pages
+├── static/               # Assets (logos, images, screenshots)
+├── docusaurus.config.js  # Main site configuration
+└── sidebars.js           # Navigation sidebar configuration
 ```
 
 ---
 
 ## 🤝 Contributing
 
-We welcome contributions! Whether it's fixing a typo, improving a guide, or adding new documentation:
+We welcome contributions to improve the documentation!
 
-1.  **Fork** the repository.
-2.  **Create** a new branch for your feature or bugfix.
-3.  **Commit** your changes with clear messages.
-4.  **Push** to your branch and open a **Pull Request**.
-
----
-
-## 💬 Community
-
-- **Discord:** [Join our Discord server](https://discord.gg/uDp2zAuUyQ)
-- **GitHub Issues:** [Report bugs or suggest features](https://github.com/orion-kernel/bimagic/issues)
+1. **Fork** the repository: `github.com/bimagic/bimagic-docs`.
+2. **Create** a feature branch: `git checkout -b docs/my-new-guide`.
+3. **Commit** your changes cleanly.
+4. **Push** and submit a **Pull Request**.
 
 ---
 
 ## 📄 License
 
-This project is licensed under the terms specified in the repository. Built with ❤️ by [orion-kernel](https://github.com/orion-kernel).
+This project is open-source under the **MIT License**. Built with ❤️ by [Bimbok](https://github.com/bimbok) and [adityapaul26](https://github.com/adityapaul26).
