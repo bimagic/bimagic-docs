@@ -74,4 +74,4 @@ At the top of the interface, a prominent rounded status box summarizes:
 - Ahead/behind counts relative to upstream (`AHEAD: X | BEHIND: Y`)
 - Working tree state: `🟢 clean`, `🟡 uncommitted`, or `🔴 conflicts`
 
-*In Bimagic Go Edition, this dashboard renders in **<5ms** via single-pass porcelain v2 execution.*
+*In Bimagic Go Edition, this dashboard renders in **sub-5ms** via single-pass porcelain v2 execution.*
