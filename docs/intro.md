@@ -24,11 +24,11 @@ Bimagic is an interactive command-line tool that streamlines common Git operatio
 
 ## Sample
 
-<img width="800" style={{borderRadius: '12px'}} height="450" alt="Image" src="/img/2026-03-11-191645_hyprshot.png" />
-<p align="center">bimagic in a terminal (kitty)</p>
+<img width="800" style={{borderRadius: '12px'}} alt="Interactive Menu" src="/img/1.png" />
+<p align="center">Interactive magic spell menu with custom theme styling</p>
 
-<img width="800" style={{borderRadius: '12px'}} height="450" alt="Image" src="/img/2026-03-11-191744_nvim.png" />
-<p align="center">bimagic in neovim</p>
+<img width="800" style={{borderRadius: '12px'}} alt="Confirmation Dialog" src="/img/2.png" />
+<p align="center">Interactive confirmation dialog with dynamic button themes</p>
 
 ## Features
 
