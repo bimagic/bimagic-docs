@@ -4,33 +4,27 @@ sidebar_position: 4
 
 # Usage
 
-Simply run the `bimagic` command in your terminal:
+Simply run the `bimagic` command or the `wz` shortcut in your terminal:
 
 ```bash
+wz
+# OR
 bimagic
 ```
 
 :::tip Quick Access
-
 - Press **Ctrl + B** in your terminal to quickly summon the wizard from anywhere!
-- You can also use the short alias **wz** (Wizard) for even faster access!
-
+- You can use the short alias **`wz`** (Wizard) for even faster access!
 :::
-
-```bash
-wz
-```
 
 ### Command Line Flags
 
 You can use flags to perform specific actions immediately:
 
 - **Clone Repository**:
-
   ```bash
   bimagic -d "repo-url"
   ```
-
 - **Shallow Clone**:
   ```bash
   bimagic -d "repo-url" --depth 1
@@ -39,7 +33,7 @@ You can use flags to perform specific actions immediately:
   ```bash
   bimagic -d -i "repo-url"
   ```
-- **The Lazy Wizard** (Add + Commit + Push):
+- **The Lazy Wizard** (Add + Commit + Push; auto-amends if clean):
   ```bash
   bimagic -z "commit message"
   ```
@@ -59,16 +53,25 @@ You can use flags to perform specific actions immediately:
   ```bash
   bimagic -a
   ```
-- Pull latest changes
-
+- **Pull Latest Changes**:
   ```bash
   bimagic -p
+  ```
+- **Tag Operations** *(Go Edition)*:
+  ```bash
+  bimagic -t
+  ```
+- **Diff & Inspection Wizard** *(Go Edition)*:
+  ```bash
+  bimagic --diff
   ```
 
 ### Status Dashboard
 
-At the top of the interface, a status box summarizes:
+At the top of the interface, a prominent rounded status box summarizes:
 
-- Current `GITHUB_USER` and branch
-- Ahead/behind counts relative to upstream (if set)
-- Working tree state: clean, uncommitted, or conflicts
+- Current `GITHUB_USER` and active branch
+- Ahead/behind counts relative to upstream (`AHEAD: X | BEHIND: Y`)
+- Working tree state: `🟢 clean`, `🟡 uncommitted`, or `🔴 conflicts`
+
+*In Bimagic Go Edition, this dashboard renders in **<5ms** via single-pass porcelain v2 execution.*
