@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Clone Repository
 
-This feature allows you to clone a repository with two modes, both featuring a **themed progress bar** to show real-time download status
+This feature allows you to clone a repository with two modes, featuring a **themed progress bar** with real-time transfer speed (`⚡ Speed`) and estimated time of completion (`󱎫 ETA`).
 
 ### Standard Clone
 
