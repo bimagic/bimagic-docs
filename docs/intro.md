@@ -45,6 +45,10 @@ Bimagic is an interactive command-line tool that streamlines common Git operatio
 - **Commit Management**: Streamlined staging, committing, and undoing ("Time Turner") with multi-select revert support.
 - **Unstage Files**: Interactive multi-select unstaging (`git restore --staged`).
 - **Discard Local Modifications**: Safe interactive discard of unstaged edits (`git checkout --`).
+- **Interactive Rebase & Squash**: Combine N commits into 1 (`git reset --soft`), interactive rebase (`git rebase -i`), or rebase onto target branch.
+- **Conflict Resolution Assistant**: 1-click conflict resolution (Accept Ours `--ours`, Accept Theirs `--theirs`, or open in `$EDITOR`).
+- **Code Blame & Line History**: Line-by-line commit and author attribution with `fzf` file picker and `bat` syntax highlighting.
+- **Git Submodule Manager**: Initialize, sync (`--recursive`), or add Git submodules.
 - **Tag Mastery**: Complete tag lifecycle (create annotated/lightweight, list, push, delete local & remote tags).
 - **Diff & Inspection Wizard**: Interactive viewer for unstaged diffs, staged diffs, file diffs, and branch comparisons.
 - **Cherry-Pick Wizard**: Select and apply commits onto current branch with conflict resolution.
@@ -57,17 +61,17 @@ Bimagic is an interactive command-line tool that streamlines common Git operatio
 
 - **Secure Integration**: GitHub authentication via personal access tokens or SSH.
 - **Automated Initialization**: Rapid setup and repository initialization with guaranteed `main` branch default.
-- **Smart Cloning**: Support for both standard and interactive sparse checkout selection (`--filter=blob:none`).
+- **Smart Cloning**: Support for standard and interactive sparse checkout (`--filter=blob:none`) with real-time transfer speed (`󱐋`) and `󱎫 ETA`.
 - **The Architect**: Integrated `.gitignore` generator for professional project setup with 70+ blueprints.
 - **Safety**: Automated `master`-to-`main` branch renaming and safe file removal with Git integration.
 
 ### Analysis & Visualization
 
-- **Status Dashboard**: Real-time overview of branch status, ahead/behind counts, and uncommitted changes in a high-contrast rounded box.
+- **Status Dashboard**: Real-time overview of branch status, ahead/behind counts, and uncommitted changes in a high-contrast rounded box with Matugen TrueColor theme support.
 - **Visual Commit Graph**: High-quality "pretty git log" for clear history visualization.
 - **Contributor Stats**: Detailed project contribution insights with custom time-range filtering.
 - **The Scrying Glass**: Scrollable file browser with `fzf` side-by-side preview and `bat` syntax highlighting.
-- **Theming**: Dynamic themed progress bar for cloning.
+- **Direct Keymap Help Table**: Responsive terminal-width Help Table (`wz -h`) with zero truncation.
 
 ### Customization
 
