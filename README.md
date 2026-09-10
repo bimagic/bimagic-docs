@@ -1,6 +1,6 @@
 # Bimagic Documentation 🔮✨
 
-Welcome to the official documentation repository for **Bimagic**, the interactive Git companion. This website provides comprehensive guides, installation tutorials, and spell references for both **Bimagic Go Edition (`bimagic-go` v2.0.0)** (Recommended) and the classic **Bimagic Shell Edition**.
+Welcome to the official documentation repository for **Bimagic**, the interactive Git companion. This website provides comprehensive guides, installation tutorials, and spell references for both **Bimagic Go Edition (`bimagic-go` v2.1.0)** (Recommended) and the classic **Bimagic Shell Edition**.
 
 Built with [Docusaurus 3](https://docusaurus.io/), this site is optimized for ultra-fast performance, accessibility, and an intuitive developer experience.
 
@@ -12,19 +12,23 @@ Check out the live documentation at: **[https://bimagic.vercel.app](https://bima
 
 ## 🔮 What's Documented
 
-This site covers full documentation for Bimagic v2.0.0:
+This site covers full documentation for Bimagic v2.1.0:
 
 - **🚀 Installation Guides**: Automated one-liner (`curl`), Go `go install`, native **Windows Installation (`bimagic.exe`)**, npm, and manual build workflows.
 - **🎹 Shell & Editor Integrations**: Zsh, Bash, and Fish keybindings (**Ctrl + B**), Neovim `toggleterm` floating popups, and the `wz` shortcut symlink.
 - **🎨 Theme Customization**: Custom color palettes via `~/.config/bimagic/theme.wz` and automatic wallpaper color syncing via **Matugen**.
-- **📜 Complete Spellbook (24 Interactive Operations)**:
-  - `clone` - Standard & Interactive Sparse Checkouts
+- **📜 Complete Spellbook (29 Interactive Operations)**:
+  - `clone` - Standard & Interactive Sparse Checkouts with real-time speed `󱐋` and `󱎫 ETA`
   - `init` - Rapid setup with guaranteed `main` default
   - `unstage` - Interactive file unstaging (`git restore --staged`) *(Go Edition)*
   - `discard` - Safe local modification discarding (`git checkout --`) *(Go Edition)*
   - `commit` - Magic Commit Builder (Conventional) & Quick Commit
-  - `push` & `pull` - Remote synchronization & upstream auto-tracking
+  - `push` & `pull` - Remote synchronization with `git pull --rebase` support
   - `branch` - Switch, create, rename (`-m`), and delete (`-d`/`-D`) branches
+  - `rebase` - Interactive Rebase & Commit Squash Wizard (`wz -K`) *(Go Edition)*
+  - `conflicts` - Interactive Conflict Resolution Assistant (`wz -x`) *(Go Edition)*
+  - `blame` - Code Blame & Line History Inspector (`wz -B`) *(Go Edition)*
+  - `submodule` - Git Submodule Manager (`wz -M`) *(Go Edition)*
   - `tag` - Complete tag lifecycle (create, list, push, delete local & remote tags) *(Go Edition)*
   - `diff` - Unstaged, staged, file, and branch comparison diffs *(Go Edition)*
   - `cherry` - Search and pluck specific commits onto current branch *(Go Edition)*

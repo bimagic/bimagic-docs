@@ -12,8 +12,8 @@ sidebar_position: 1
 
 A powerful interactive Git automation wizard that simplifies your GitHub workflow with an interactive menu system.
 
-:::tip Recommended Edition: Bimagic Go (v2.0.0)
-We strongly recommend using **Bimagic Go Edition (`bimagic-go`)**! Rebuilt from the ground up in Go, it features **sub-5ms multi-threaded performance**, native **Windows (`bimagic.exe`)** support, shortcut symlink (`wz`), Nerd Font icons, and new spells (Unstage, Discard, Tag Operations, Diff Wizard, Cherry-Pick). 
+:::tip Recommended Edition: Bimagic Go (v2.1.0)
+We strongly recommend using **Bimagic Go Edition (`bimagic-go`)**! Rebuilt from the ground up in Go, it features **sub-5ms multi-threaded performance**, native **Windows (`bimagic.exe`)** support, shortcut symlink (`wz`), Nerd Font icons, and new spells (Unstage, Discard, Tag Operations, Diff Wizard, Cherry-Pick, Rebase, Conflicts, Blame, Submodules). 
 
 *The classic Bash script version remains supported for Unix environments.*
 :::
